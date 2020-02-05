@@ -18,13 +18,13 @@ class GildedRoseTest(unittest.TestCase):
             Item("yusk3", 0, 48)
             ]
         jours = [-30, -1, 0, 1, 5, 10, 15]
-        for j in jours:
-            gilded_rose = GildedRose(items)
-            gilded_rose.update_quality()
-            print ()
-            print ("jour =", j)
-            for obj in range(len(items)):
-                print ("object", items[obj].name, "vaut", items[obj].quality, "périme dans", items[obj].sell_in)
+        #for j in jours:
+        gilded_rose = GildedRose(items)
+        gilded_rose.update_quality()
+           # print ()
+            #print ("jour =", j)
+        for obj in range(len(items)):
+            print ("object", items[obj].name, "vaut", items[obj].quality, "périme dans", items[obj].sell_in)
 
 if __name__ == "__main__":
     unittest.main()
